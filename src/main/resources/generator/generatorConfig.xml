@@ -1,0 +1,48 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE generatorConfiguration-->
+        <!--PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"-->
+        <!--"http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">-->
+
+<!--<generatorConfiguration>-->
+    <!--&lt;!&ndash; 引入数据库连接配置 &ndash;&gt;-->
+    <!--<properties resource="jdbc.properties"/>-->
+
+    <!--<context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">-->
+        <!--<property name="beginningDelimiter" value="`"/>-->
+        <!--<property name="endingDelimiter" value="`"/>-->
+
+        <!--&lt;!&ndash; 配置 tk.mybatis 插件 &ndash;&gt;-->
+        <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">-->
+            <!--<property name="mappers" value="tk.mybatis.mapper.MyMapper"/>-->
+        <!--</plugin>-->
+
+        <!--&lt;!&ndash; 配置数据库连接 &ndash;&gt;-->
+        <!--<jdbcConnection-->
+                <!--driverClass="${jdbc.driverClass}"-->
+                <!--connectionURL="${jdbc.connectionURL}"-->
+                <!--userId="${jdbc.username}"-->
+                <!--password="${jdbc.password}">-->
+        <!--</jdbcConnection>-->
+
+        <!--&lt;!&ndash; 配置实体类存放路径 &ndash;&gt;-->
+        <!--<javaModelGenerator targetPackage="com.funtl.hello.spring.boot.domain" targetProject="src/main/java"/>-->
+
+        <!--&lt;!&ndash; 配置 XML 存放路径 &ndash;&gt;-->
+        <!--<sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"/>-->
+
+        <!--&lt;!&ndash; 配置 DAO 存放路径 &ndash;&gt;-->
+        <!--<javaClientGenerator-->
+                <!--targetPackage="com.funtl.hello.spring.boot.mapper"-->
+                <!--targetProject="src/main/java"-->
+                <!--type="XMLMAPPER"/>-->
+
+        <!--&lt;!&ndash; 配置需要指定生成的数据库和表，% 代表所有表 &ndash;&gt;-->
+        <!--<table catalog="myshop" tableName="%">-->
+            <!--&lt;!&ndash; 默认为 false，如果设置为 true，在生成的 SQL 中，table 名字不会加上 catalog 或 schema &ndash;&gt;-->
+            <!--<property name="ignoreQualifiersAtRuntime" value="true"/>-->
+
+            <!--&lt;!&ndash; mysql 配置 &ndash;&gt;-->
+            <!--<generatedKey column="id" sqlStatement="Mysql" identity="true"/>-->
+        <!--</table>-->
+    <!--</context>-->
+<!--</generatorConfiguration>-->
